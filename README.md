@@ -43,7 +43,7 @@ uv run huggingface-cli login
 
 ## 1. Tmux Setup
 
-TMUX is great. If you run experiments in the default terminal and ssh dies, your experiments die too! Tmux saves you here. **ALWAYS RUN EXPERIMENTS IN TMUX**
+Tmux is great. If you run experiments in the default terminal and ssh dies, your experiments die too! Tmux saves you here.
 
 Here's a little tmux crash course:
 
@@ -67,6 +67,8 @@ tmux attach -t eval
 # Switch to the other session with
 # Ctrl+b )
 
+# Detach via Ctrl+b d
+
 tmux ls  # list sessions
 ```
 
@@ -75,7 +77,7 @@ In the `training` session, split horizontally:
 ```bash
 tmux attach -t training
 # Ctrl+b %  (splits horizontally)
-# Ctrl+b ↑/↓ to switch panes
+# Ctrl+b [left]/[right] to switch panes
 # Ctrl+b [space] to change layouts
 ```
 
